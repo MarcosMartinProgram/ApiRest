@@ -7,7 +7,7 @@ import java.util.UUID;
 
 public interface TareaService {
     Tarea asignarTarea(UUID desarrolladorId, UUID juegoId, Tarea tarea);
-    Tarea marcarTareaComoCompletada(UUID tareaId); // Este método debe estar en la interfaz
+    Tarea marcarTareaComoCompletada(UUID tareaId);
     List<Tarea> listarTareasDeDesarrollador(UUID desarrolladorId);
     Tarea actualizarEstadoTarea(UUID tareaId, String estado);
     List<Tarea> buscarTareasPorEstado(String estado);
